@@ -969,11 +969,11 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	timerSpecial			= "Восст. особой способности"
+	timerSpecial			= "Восст. спецспособности"
 }
 
 L:SetOptionLocalization{
-	timerSpecial			= "Отсчёт времени до восстановления особой способности",
+	timerSpecial			= "Отсчёт времени до восстановления спецспособности",
 	DBM_ARAN_DO_NOT_MOVE	= "Показывать спецпредупреждение для $spell:30004"
 }
 
