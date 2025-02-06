@@ -78,7 +78,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnPhase		= "Показывать предупреждение для следующей фазы",
-	TimerPhase		= "Показать отсчёт до следующей фазы",
+	TimerPhase		= "Отсчёт времени до следующей фазы",
 	VaporIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45392),
 	EncapsIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45665)
 }
@@ -131,9 +131,9 @@ L:SetOptionLocalization{
 	WarnHuman		= "Показывать предупреждение для Гуманоидов",
 	WarnVoid		= "Показывать предупреждение для Часового Бездны",
 	WarnFiend		= "Показывать предупреждение для Демонов во 2-й фазе",
-	TimerHuman		= "Показывать таймер для Гуманоидов",
-	TimerVoid		= "Показывать таймер для Часового Бездны",
-	TimerPhase		= "Показывать отсчёт до перехода на 2-ю фазу"
+	TimerHuman		= "Отсчёт времени до Гуманоидов",
+	TimerVoid		= "Отсчёт времени до Часового Бездны",
+	TimerPhase		= "Отсчёт времени до перехода на 2-ю фазу"
 }
 
 L:SetMiscLocalization{
@@ -165,7 +165,7 @@ L:SetOptionLocalization{
 	WarnBlueOrb		= "Показывать предупреждение для Сфер Дракона",
 	SpecWarnDarkOrb	= "Показывать спецпредупреждение для Темных сфер",
 	SpecWarnBlueOrb	= "Показывать спецпредупреждение для Сфер Дракона",
-	TimerBlueOrb	= "Показать таймер активации формы Сфер Дракона",
+	TimerBlueOrb	= "Отсчёт времени до активации формы Сфер Дракона",
 	RangeFrame		= DBM_CORE_L.AUTO_RANGE_OPTION_TEXT:format(10, 45641),
 	BloomIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45641)
 }
@@ -211,7 +211,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnPhase		= "Показывать предупреждение для следующей фазы",
-	TimerPhase		= "Показывать отсчёт для следующего этапа",
+	TimerPhase		= "Отсчёт времени до следующего этапа",
 	KiteIcon		= "Устанавливать метку на цели, которая должна кайтить"
 }
 
@@ -245,8 +245,8 @@ L:SetTimerLocalization({
 L:SetOptionLocalization({
 	warnAshtongueDefender	= "Показывать предупреждение для Пеплоуста-защитника",
 	warnAshtongueSorcerer	= "Показывать предупреждение для Пеплоуста-колдуна",
-	timerAshtongueDefender	= "Показывать таймер для Пеплоуста-защитника",
-	timerAshtongueSorcerer	= "Показывать таймер для Пеплоуста-колдуна"
+	timerAshtongueDefender	= "Отсчёт времени до Пеплоуста-защитника",
+	timerAshtongueSorcerer	= "Отсчёт времени до Пеплоуста-колдуна"
 })
 
 -------------------------
@@ -263,7 +263,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	TimerVengefulSpirit		= "Показывать таймер для продолжительности действия Призрака"
+	TimerVengefulSpirit		= "Отсчёт времени до продолжительности действия Призрака"
 }
 
 ----------------------------
@@ -319,7 +319,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	timerAura	= "Показывать таймер для Радужной ауры",
+	timerAura	= "Отсчёт времени до Радужной ауры",
 	FAHelper	= "Установить режим мода для $spell:41001<br/>Используется предпочтение лидеров рейдов, если они используют DBM",
 	North		= "Звезда - слева/запад, круг - справа/восток, ромб - вверх/север",--По умолчанию
 	South		= "Звезда - слева/запад, круг - справа/восток, ромб - внизу/юг",
@@ -377,9 +377,9 @@ L:SetTimerLocalization{
 L:SetOptionLocalization{
 	WarnHuman		= "Показывать предупреждение для Обычной фазы",
 	WarnDemon		= "Показывать предупреждение для фазы Демона",
-	TimerNextHuman	= "Показывать отсчёт до Обычной фазы",
-	TimerNextDemon	= "Показывать отсчёт до фазы Демона",
-	RangeFrame		= "Показывать проверку дистранции (10 ярдов) в фазах 3 и 4"
+	TimerNextHuman	= "Отсчёт времени до Обычной фазы",
+	TimerNextDemon	= "Отсчёт времени до фазы Демона",
+	RangeFrame		= "Показывать проверку дистанции (10 ярдов) в фазах 3 и 4"
 }
 
 L:SetMiscLocalization{
@@ -454,7 +454,7 @@ L:SetTimerLocalization{
 L:SetOptionLocalization{
 	WarnWave		= "Предупреждать о приближении новой волны",
 	DetailedWave	= "Подробное предупреждение о приближении новой волны (какие именно мобы)",
-	TimerWave		= "Показывать таймер для следующей волны"
+	TimerWave		= "Отсчёт времени до следующей волны"
 }
 
 L:SetMiscLocalization{
@@ -538,12 +538,12 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnSplit		= "Показывать предупреждение для разделения",
-	WarnSplitSoon	= "Показывать предварительное предупреждение для разделения",
+	WarnSplitSoon	= "Заранее предупреждать о разделении",
 	WarnAgent		= "Показывать предупреждение о появлении Посланников",
 	WarnPriest		= "Показывать предупреждение о появлении Жрецов и Солариана",
-	TimerSplit		= "Показывать таймер для разделения",
-	TimerAgent		= "Показывать таймер появления Посланников",
-	TimerPriest		= "Показывать таймер для появления Жрецов и Солариана"
+	TimerSplit		= "Отсчёт времени до разделения",
+	TimerAgent		= "Отсчёт времени до появления Посланников",
+	TimerPriest		= "Отсчёт времени до появления Жрецов и Солариана"
 }
 
 L:SetMiscLocalization{
@@ -582,10 +582,10 @@ L:SetOptionLocalization{
 	WarnEgg			= "Показывать предупреждение при появлении яйца Феникса",
 	SpecWarnGaze	= "Показывать спецпредупреждение, когда на Вас взгляд",
 	SpecWarnEgg		= "Показывать спецпредупреждение, когда появляется яйцо Феникса",
-	TimerPhase		= "Показывать отсчёт до следующего этапа",
-	TimerPhase1mob	= "Показывать отсчёт до активного моба на 1-й фазе",
-	TimerNextGaze	= "Показывать таймер для изменения цели взгляда Таладреда Светокрада",
-	TimerRebirth	= "Показывать таймер оставшегося возрождения Яйца Феникса",
+	TimerPhase		= "Отсчёт времени до следующего этапа",
+	TimerPhase1mob	= "Отсчёт времени до активного моба на 1-й фазе",
+	TimerNextGaze	= "Отсчёт времени до изменения цели взгляда Таладреда Светокрада",
+	TimerRebirth	= "Отсчёт времени до оставшегося возрождения Яйца Феникса",
 	GazeIcon		= "Установить метку на цель взгляда Таладреда Светокрада"
 }
 
@@ -635,7 +635,7 @@ L:SetOptionLocalization{
 	WarnMark		= "Показать предупреждение для меток",
 	WarnPhase		= "Показать предупреждение для следующей фазы",
 	SpecWarnMark	= "Показывать предупреждение, когда урон от дебаффа меток превышает 100%",
-	TimerMark		= "Показать таймер для следующих меток"
+	TimerMark		= "Отсчёт времени до следующих меток"
 }
 
 L:SetMiscLocalization{
@@ -665,8 +665,8 @@ L:SetTimerLocalization{
 L:SetOptionLocalization{
 	WarnSubmerge		= "Показывать предупреждение при погружении",
 	WarnEmerge			= "Показывать предупреждение при появлении",
-	TimerSubmerge		= "Показывать отсчёт до погружения",
-	TimerEmerge			= "Показывать отсчёт до появления"
+	TimerSubmerge		= "Отсчёт времени до погружения",
+	TimerEmerge			= "Отсчёт времени до появления"
 }
 
 --------------------------
@@ -688,7 +688,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnPhase		= "Показывать предупреждение для следующей фазы",
-	TimerPhase		= "Показывать отсчёт до следующей фазы"
+	TimerPhase		= "Отсчёт времени до следующей фазы"
 }
 
 L:SetMiscLocalization{
@@ -733,7 +733,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	SpecWarnMurlocs	= "Показывать спецпредупреждение при появлении Мурлоков",
-	TimerMurlocs	= "Показывать таймер появления Мурлоков",
+	TimerMurlocs	= "Отсчёт времени до появления Мурлоков",
 	GraveIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(38049)
 }
 
@@ -764,15 +764,15 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnElemental		= "Показывать предварительное предупреждение до следующего Нечистого элементаля",
-	WarnStrider			= "Показывать предварительное предупреждение до следующего Долгонога",
-	WarnNaga			= "Показывать предварительное предупреждение до следующей Наги",
+	WarnElemental		= "Заранее предупреждать о следующем Нечистом элементале",
+	WarnStrider			= "Заранее предупреждать о следующем Долгоноге",
+	WarnNaga			= "Заранее предупреждать о следующей Наге",
 	WarnShield			= "Показывать предупреждение об отключении щита на 2-й фазе",
 	WarnLoot			= "Показывать предупреждение о добыче Порченой магмы",
-	TimerElementalActive	= "Показывать таймер времени, в течение которого активен Нечистый элементаль",
-	TimerElemental		= "Показывать таймер для восстановления Нечистого элементаля",
-	TimerStrider		= "Показывать таймер для следующего Долгонога",
-	TimerNaga			= "Показывать таймер для следующей Наги",
+	TimerElementalActive	= "Отсчёт времени, в течение которого активен Нечистый элементаль",
+	TimerElemental		= "Отсчёт времени до восстановления Нечистого элементаля",
+	TimerStrider		= "Отсчёт времени до следующего Долгонога",
+	TimerNaga			= "Отсчёт времени до следующей Наги",
 	SpecWarnElemental	= "Показывать спецпредупреждение при появлении Нечистого элементаля",
 	ChargeIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(38280),
 	AutoChangeLootToFFA	= "Переключить режим добычи на 'Свободную для всех' на 2-й фазе"
@@ -822,7 +822,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	timerP2	= "Показать таймер начала 2-й фазы"
+	timerP2	= "Отсчёт времени до начала 2-й фазы"
 }
 
 L:SetMiscLocalization{
@@ -973,7 +973,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	timerSpecial			= "Показывать таймер для восстановления особой способности",
+	timerSpecial			= "Отсчёт времени до восстановления особой способности",
 	DBM_ARAN_DO_NOT_MOVE	= "Показывать спецпредупреждение для $spell:30004"
 }
 
@@ -996,8 +996,8 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	warningPortal			= "Показать предупреждение для фазы портала",
-	warningBanish			= "Показать предупреждение для фазы изгнания",
+	warningPortal			= "Показывать предупреждение для фазы портала",
+	warningBanish			= "Показывать предупреждение для фазы изгнания",
 	timerPortalPhase		= "Показать таймер длительности фазы портала",
 	timerBanishPhase		= "Показать таймер длительности фазы изгнания"
 }
@@ -1019,7 +1019,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	timerCheat	= "Показывать таймер для восстановления жульничества"
+	timerCheat	= "Отсчёт времени до восстановления жульничества"
 }
 
 L:SetMiscLocalization{
@@ -1113,11 +1113,11 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnBear		= "Показывать предупреждение для формы медведя",
-	WarnBearSoon	= "Показать предварительное предупреждение для формы медведя",
+	WarnBearSoon	= "Заранее предупреждать о форме медведя",
 	WarnNormal		= "Показывать предупреждение для обычной формы",
-	WarnNormalSoon	= "Показывать предварительное предупреждение для обычной формы",
-	TimerBear		= "Показать таймер для формы медведя",
-	TimerNormal		= "Показать таймер для обычной формы"
+	WarnNormalSoon	= "Заранее предупреждать об обычной форме",
+	TimerBear		= "Отсчёт времени до формы медведя",
+	TimerNormal		= "Отсчёт времени до обычной формы"
 }
 
 L:SetMiscLocalization{
