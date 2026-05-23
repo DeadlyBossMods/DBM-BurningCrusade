@@ -23,7 +23,7 @@ local warnGrip			= mod:NewTargetNoFilterAnnounce(31972, 3, nil, "RemoveMagic")--
 local warnBurst			= mod:NewTargetNoFilterAnnounce(32014, 3)
 local warnFear			= mod:NewSpellAnnounce(31970, 3)
 
-local specWarnBurst		= mod:NewSpecialWarningYou(32014, nil, nil, nil, 3, 2)
+local specWarnBurst		= mod:NewSpecialWarningYou(32014, nil, nil, nil, 3, 2, nil, nil, "targetyou")
 local yellBurst			= mod:NewYell(32014)
 
 local timerFearCD		= mod:NewCDTimer(41, 31970, nil, nil, nil, 2)

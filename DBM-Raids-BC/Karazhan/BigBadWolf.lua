@@ -19,7 +19,7 @@ mod:RegisterEventsInCombat(
 local warningFear		= mod:NewSpellAnnounce(30752, 3)
 local warningRRH		= mod:NewTargetNoFilterAnnounce(30753, 4)
 
-local specWarnRRH		= mod:NewSpecialWarningRun(30753, nil, nil, nil, 4, 2)
+local specWarnRRH		= mod:NewSpecialWarningRun(30753, nil, nil, nil, 4, 2, nil, nil, "justrun")
 
 local timerRRH			= mod:NewTargetTimer(20, 30753, nil, nil, nil, 3)
 local timerRRHCD		= mod:NewNextTimer(30, 30753, nil, nil, nil, 3)

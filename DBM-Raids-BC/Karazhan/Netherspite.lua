@@ -21,7 +21,7 @@ local warningBanish			= mod:NewAnnounce("warningBanish", 1, "136135")
 local warningBreathCast		= mod:NewCastAnnounce(38523, 2)
 local warningVoid			= mod:NewSpellAnnounce(37063, 4)
 
-local specWarnVoid			= mod:NewSpecialWarningGTFO(30533, nil, nil, nil, 1, 6)
+local specWarnVoid			= mod:NewSpecialWarningGTFO(30533, nil, nil, nil, 1, 6, nil, nil, "watchfeet")
 
 local timerPortalPhase		= mod:NewTimer(61.5, "timerPortalPhase", "135743", nil, nil, 6)
 local timerBanishPhase		= mod:NewTimer(40, "timerBanishPhase", "136135", nil, nil, 6)

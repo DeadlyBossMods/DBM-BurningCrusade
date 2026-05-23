@@ -22,8 +22,8 @@ mod:RegisterEventsInCombat(
 local warnIceBolt		= mod:NewTargetNoFilterAnnounce(31249, 3)
 local warnDnd			= mod:NewSpellAnnounce(31258, 3)
 
-local specWarnIceBolt	= mod:NewSpecialWarningYou(31249, nil, nil, nil, 1, 2)
-local specWarnDnD		= mod:NewSpecialWarningGTFO(31258, nil, nil, nil, 1, 8)
+local specWarnIceBolt	= mod:NewSpecialWarningYou(31249, nil, nil, nil, 1, 2, nil, nil, "stunsoon")
+local specWarnDnD		= mod:NewSpecialWarningGTFO(31258, nil, nil, nil, 1, 8, nil, nil, "watchfeet")
 
 local timerDndCD		= mod:NewCDTimer(32, 31258, nil, nil, nil, 3)--changed to 32 to match tbc classic, but maybe it really is 46 on retail?
 

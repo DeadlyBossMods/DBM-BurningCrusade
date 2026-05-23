@@ -22,8 +22,8 @@ local warnCariPower		= mod:NewSpellAnnounce(38451, 3)
 local warnTidalPower	= mod:NewSpellAnnounce(38452, 3)
 local warnSharPower		= mod:NewSpellAnnounce(38455, 3)
 
-local specWarnHeal		= mod:NewSpecialWarningInterrupt(38330, "HasInterrupt", nil, nil, 1, 2)
-local specWarnTotem		= mod:NewSpecialWarningSwitch(38236, "Dps", nil, nil, 1, 2)
+local specWarnHeal		= mod:NewSpecialWarningInterrupt(38330, "HasInterrupt", nil, nil, 1, 2, nil, nil, "kickcast")
+local specWarnTotem		= mod:NewSpecialWarningSwitch(38236, "Dps", nil, nil, 1, 2, nil, nil, "attacktotem")
 
 local berserkTimer		= mod:NewBerserkTimer(600)
 

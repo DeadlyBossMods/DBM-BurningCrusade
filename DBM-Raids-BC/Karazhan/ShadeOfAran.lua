@@ -25,9 +25,9 @@ local warningBlizzard		= mod:NewSpellAnnounce(29969, 3)
 local warningElementals		= mod:NewSpellAnnounce(37053, 3)
 local warningChains			= mod:NewTargetNoFilterAnnounce(29991, 2)
 
-local specWarnFlameWreath	= mod:NewSpecialWarning("DBM_ARAN_DO_NOT_MOVE", nil, nil, nil, 3, 2)
-local specWarnArcane		= mod:NewSpecialWarningRun(29973, nil, nil, nil, 4, 7)
-local specWarnBlizzard		= mod:NewSpecialWarningGTFO(29951, nil, nil, nil, 1, 6)
+local specWarnFlameWreath	= mod:NewSpecialWarning("DBM_ARAN_DO_NOT_MOVE", nil, nil, nil, 3, 2, nil, nil, nil, nil, "stopmove")
+local specWarnArcane		= mod:NewSpecialWarningRun(29973, nil, nil, nil, 4, 7, nil, nil, "runtoedge")
+local specWarnBlizzard		= mod:NewSpecialWarningGTFO(29951, nil, nil, nil, 1, 6, nil, nil, "watchfeet")
 
 local timerSpecial			= mod:NewTimer(28.9, "timerSpecial", "132866", nil, nil, 2)
 local timerFlameCast		= mod:NewCastTimer(5, 29946, nil, nil, nil, 3, nil, DBM_COMMON_L.DEADLY_ICON)

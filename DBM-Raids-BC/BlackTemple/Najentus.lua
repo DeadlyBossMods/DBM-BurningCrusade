@@ -26,7 +26,7 @@ local warnShield		= mod:NewSpellAnnounce(39872, 4)
 local warnShieldSoon	= mod:NewSoonAnnounce(39872, 10, 3)
 local warnSpine			= mod:NewTargetNoFilterAnnounce(39837, 3)
 
-local specWarnSpineTank	= mod:NewSpecialWarningTaunt(39837, nil, nil, nil, 1, 2)
+local specWarnSpineTank	= mod:NewSpecialWarningTaunt(39837, nil, nil, nil, 1, 2, nil, nil, "tauntboss")
 local yellSpine			= mod:NewYell(39837)
 
 local timerShield		= mod:NewCDTimer(56, 39872, nil, nil, nil, 5)

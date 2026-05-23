@@ -26,8 +26,8 @@ local warningManaBurn		= mod:NewCastAnnounce(29405, 3, nil, nil, false)
 local warningGreaterHeal	= mod:NewCastAnnounce(35096, 3, nil, nil, "HasInterrupt")
 local warningHolyLight		= mod:NewCastAnnounce(29562, 3, nil, nil, "HasInterrupt")
 
-local specWarnGreaterHeal	= mod:NewSpecialWarningInterrupt(35096, "HasInterrupt", nil, nil, 1, 2)
-local specWarnHolyLight		= mod:NewSpecialWarningInterrupt(29562, "HasInterrupt", nil, nil, 1, 2)
+local specWarnGreaterHeal	= mod:NewSpecialWarningInterrupt(35096, "HasInterrupt", nil, nil, 1, 2, nil, nil, "kickcast")
+local specWarnHolyLight		= mod:NewSpecialWarningInterrupt(29562, "HasInterrupt", nil, nil, 1, 2, nil, nil, "kickcast")
 
 local timerVanishCD			= mod:NewCDTimer(35, 29448, nil, nil, nil, 6)--35.1-51.8
 local timerGougeCD			= mod:NewCDTimer(22.6, 29448, nil, "Tank", nil, 6)--22.6-43.6

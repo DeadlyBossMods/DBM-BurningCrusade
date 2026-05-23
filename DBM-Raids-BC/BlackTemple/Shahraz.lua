@@ -36,7 +36,7 @@ local warnShriek		= mod:NewSpellAnnounce(40823)
 local warnEnrageSoon	= mod:NewSoonAnnounce(21340)--not actual spell id
 local warnEnrage		= mod:NewSpellAnnounce(21340)
 
-local specWarnFA		= mod:NewSpecialWarningYouPos(41001, nil, nil, nil, 1, 2)
+local specWarnFA		= mod:NewSpecialWarningYouPos(41001, nil, nil, nil, 1, 2, nil, nil, "scatter")
 local yellFA			= mod:NewShortPosYell(41001)
 
 local timerFACD			= mod:NewCDTimer(20.7, 41001, nil, nil, nil, 3)--20-51

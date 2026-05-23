@@ -26,8 +26,8 @@ local warnAgent			= mod:NewAnnounce("WarnAgent", 1, 39414)
 local warnPriest		= mod:NewAnnounce("WarnPriest", 1, 39414)
 local warnPhase2		= mod:NewPhaseAnnounce(2)
 
-local specWarnDomination= mod:NewSpecialWarningInterrupt(37135, "HasInterrupt", nil, 2, 1, 2)
-local specWarnWrath		= mod:NewSpecialWarningMoveAway(42783, nil, nil, nil, 1, 2)
+local specWarnDomination= mod:NewSpecialWarningInterrupt(37135, "HasInterrupt", nil, 2, 1, 2, nil, nil, "kickcast")
+local specWarnWrath		= mod:NewSpecialWarningMoveAway(42783, nil, nil, nil, 1, 2, nil, nil, "runout")
 local yellWrath			= mod:NewYell(42783)
 
 local timerSplit		= mod:NewTimer(90, "TimerSplit", 39414, nil, nil, 6)

@@ -32,7 +32,7 @@ local warnCrushed			= mod:NewTargetNoFilterAnnounce(40243, 3, nil, "Healer")
 local warnIncinerate		= mod:NewSpellAnnounce(40239, 3)
 local warnDeath				= mod:NewTargetNoFilterAnnounce(40251, 3)
 
-local specWarnDeath			= mod:NewSpecialWarningYou(40251, nil, nil, nil, 1, 2)
+local specWarnDeath			= mod:NewSpecialWarningYou(40251, nil, nil, nil, 1, 2, nil, nil, "targetyou")
 local specWarnDeathEnding	= mod:NewSpecialWarningMoveAway(40251, nil, nil, nil, 3, 2)
 
 local timerCrushed			= mod:NewBuffActiveTimer(15, 40243, nil, "Healer", 2, 5, nil, DBM_COMMON_L.HEALER_ICON)
