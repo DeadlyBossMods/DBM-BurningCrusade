@@ -65,7 +65,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		if args:IsPlayer() then
 			yellSpine:Yell()
 		else
-			local uId = DBM:GetRaidUnitId(args.destName)
+			local uId = DBM:GetRaidUnitId(args.destName, true)
 			if self:IsTanking(uId) then--Tank got spike and it wasn't us
 				--Taunt off spiked tank
 				specWarnSpineTank:Show(args.destName)
