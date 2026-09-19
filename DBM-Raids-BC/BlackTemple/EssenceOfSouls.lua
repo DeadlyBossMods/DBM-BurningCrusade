@@ -31,7 +31,7 @@ ability.id = 41410 and type = "begincast"
  or (ability.id = 41350 or ability.id = 41337 or ability.id = 41431 or ability.id = 41545) and type = "cast"
  or ability.id = 41305 and type = "removebuff"
 --]]
-local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
+local isRetail = DBM:IsRetail()
 --maybe a warning for Seethe if tanks mess up in phase 3
 local warnFixate		= mod:NewTargetNoFilterAnnounce(41294, 3, nil, "Tank|Healer", 2)
 local warnDrain			= mod:NewTargetNoFilterAnnounce(41303, 3, nil, "Healer", 2)

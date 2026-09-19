@@ -799,7 +799,7 @@ L:SetMiscLocalization{
 	DBM_MAG_YELL_PHASE3		= "Ich lasse mich nicht so leicht bezwingen! Lasst die Mauern dieses Kerkers erzittern... und einstürzen!"
 }
 
-if WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1) then return end--Anything below here is only needed for classic wrath or classic bc
+if DBM:IsRetail() then return end--Anything below here is only needed for classic wrath or classic bc
 
 ---------------
 --  Nalorakk --

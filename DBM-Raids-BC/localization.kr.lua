@@ -1071,7 +1071,7 @@ L:SetGeneralLocalization{
 	name = "파괴자 로카드"
 }
 
-if WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1) then return end--Anything below here is only needed for classic wrath or classic bc
+if DBM:IsRetail() then return end--Anything below here is only needed for classic wrath or classic bc
 
 ---------------
 --  Nalorakk --
