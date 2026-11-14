@@ -1,6 +1,6 @@
 ## AllowLoadGameType: tbc, wrath, cata, mists, standard
 ## Interface: 20506, 30405, 38002, 40402, 50504, 120105, 120107
-## Version: @project-version@
+## Version: r22
 ## Category: DBM
 
 ## Title:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10World Bosses (BC)|r
@@ -19,6 +19,7 @@
 ## X-DBM-Mod-World-Boss: 1
 ## X-DBM-StatTypes: normal
 ## X-DBM-Mod-Name: World Bosses (BC)
+## X-DBM-Mod-Name-zhCN: 世界首领 (燃烧的远征)
 ## X-DBM-Mod-Name-koKR: 필드 보스 (불성)
 ## X-DBM-Mod-Name-ruRU: Мировые боссы (BC)
 ## X-DBM-Mod-Sort: 1003
