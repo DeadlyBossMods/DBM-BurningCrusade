@@ -1,3 +1,4 @@
+-- 泰坦重铸时光服-时光2-法师-旺仔芒果/椰奶冻-2026.11.13--
 if GetLocale() ~= "zhCN" then return end
 
 local L
@@ -10,7 +11,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	DBM_KAZZAK_EMOTE_ENRAGE		= "%s becomes enraged!"--Probalby won't be used, at least not long. Once spellid replaces it
+	DBM_KAZZAK_EMOTE_ENRAGE		= "%s 进入狂暴状态!"--Probalby won't be used, at least not long. Once spellid replaces it
 }
 
 -- Doomwalker
@@ -21,5 +22,5 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	DBM_DOOMW_EMOTE_ENRAGE	= "%s becomes enraged!"--Probalby won't be used, at least not long. Once spellid replaces it
+	DBM_DOOMW_EMOTE_ENRAGE	= "%s 进入狂暴状态!"--Probalby won't be used, at least not long. Once spellid replaces it
 }
