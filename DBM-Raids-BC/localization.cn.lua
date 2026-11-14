@@ -1,3 +1,4 @@
+-- 泰坦重铸时光服-时光2-法师-旺仔芒果/椰奶冻-2026.11.13--
 if GetLocale() ~= "zhCN" then return end
 
 local L
@@ -21,14 +22,14 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnPortal			= "Show warning for $spell:46021 target",--Translate
-	SpecWarnWildMagic	= "Show special warning for Wild Magic",--Translate
-	TimerNextPortal		= "Show timer for portals",--Translate
-	RangeFrame			= "Show range frame (10 yards)",--Translate
-	ShowFrame			= "Show Spectral Realm frame" ,--Translate
-	FrameClassColor		= "Use class colors in Spectral Realm frame",--Translate
-	FrameUpwards		= "Expand Spectral Realm frame upwards",--Translate
-	FrameLocked			= "Set Spectral Realm frame not movable"--Translate
+	WarnPortal			= "为$spell:46021的目标显示警告",
+	SpecWarnWildMagic	= "为狂野魔法显示特别警告",
+	TimerNextPortal		= "为传送门显示计时条",
+	RangeFrame			= "显示距离框体 (10码)",
+	ShowFrame			= "显示灵魂世界框体",
+	FrameClassColor		= "灵魂世界框体使用职业颜色",
+	FrameUpwards		= "灵魂世界框体向上延伸",
+	FrameLocked			= "锁定灵魂世界框体"
 }
 
 L:SetMiscLocalization{
@@ -39,12 +40,12 @@ L:SetMiscLocalization{
 	Crit				= "+100%爆击伤害",
 	Aggro				= "+100%威胁值",
 	Mana				= "-50%技能消耗",
-	FrameTitle			= "首领生命值",
+	FrameTitle			= "灵魂世界",
 	FrameLock			= "锁定框体",
 	FrameClassColor		= "使用职业颜色",
-	FrameOrientation	= "灵魂世界框体向上延伸",
+	FrameOrientation	= "向上延伸",
 	FrameHide			= "隐藏框体",
-	FrameClose			= "Close"--Translate
+	FrameClose			= "关闭"
 }
 
 ----------------
@@ -71,31 +72,31 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	WarnPhase		= "%s阶段",
-	WarnPhaseSoon	= "%s阶段 in 10 sec",
+	WarnPhaseSoon	= "10秒后 %s阶段",
 	WarnBreath		= "深呼吸 (%d)"
 }
 
 L:SetTimerLocalization{
-	TimerPhase		= "%s阶段",
+	TimerPhase		= "下一次%s阶段",
 	TimerBreath		= "深呼吸"
 }
 
 L:SetOptionLocalization{
-	WarnPhase		= "Show warning for next phase",--Translate
-	WarnPhaseSoon	= "Show pre-warning for next phase",--Translate
-	WarnBreath		= "Show warning for Deep Breath",--Translate
-	TimerPhase		= "Show time for next phase",--Translate
-	TimerBreath		= "Show timer for Deep Breath cooldown",--Translate
+	WarnPhase		= "为下一个阶段显示警告",
+	WarnPhaseSoon	= "为下一个阶段显示预先警告",
+	WarnBreath		= "为深呼吸显示警告",
+	TimerPhase		= "为下一个阶段显示计时条",
+	TimerBreath		= "为深呼吸冷却显示计时条",
 	VaporIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45392),
 	EncapsIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45665),
-	YellOnEncaps	= "Yell on $spell:45665"
+	YellOnEncaps	= "中了$spell:45665时大喊"
 }
 
 L:SetMiscLocalization{
 	Air				= "空中",
 	Ground			= "地面",
-	YellEncaps		= "Encapsulate on me! Run away!",--Change to generic so we don't have to translate?
-	AirPhase		= "I am stronger than ever before!",--Translate
+	YellEncaps		= "我被封住了！快跑！",
+	AirPhase		= "我比以前更加强大了！",
 	Breath			= "%s深深地吸了一口气。"
 }
 
@@ -109,8 +110,10 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	Nova			= "萨洛拉丝向([^%s]+)施放暗影新星。",--Verify
-	Conflag			= "奥蕾塞丝向([^%s]+)施放燃烧。"--Verify
+	Nova			= "萨洛拉丝向([^%s]+)施放暗影新星。",
+	Conflag			= "奥蕾塞丝向([^%s]+)施放燃烧。",
+	Sacrolash		= "萨洛拉丝",
+	Alythess		= "奥蕾塞丝"
 }
 
 ------------
@@ -137,14 +140,14 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnHuman		= "Show warning for Humanoids",--Translate
-	WarnHumanSoon	= "Show pre-warning for Humanoids",--Translate
-	WarnVoid		= "Show warning for Void Sentinels",--Translate
-	WarnVoidSoon	= "Show pre-warning for Void Sentinels",--Translate
-	WarnFiend		= "Show warning for Fiends in phase 2",--Translate
-	TimerHuman		= "Show timer for Humanoids",--Translate
-	TimerVoid		= "Show timer for Void Sentinels",--Translate
-	TimerPhase		= "Show time for Phase 2 transition"--Translate
+	WarnHuman		= "为暗誓精灵显示警告",
+	WarnHumanSoon	= "为暗誓精灵显示预先警告",
+	WarnVoid		= "为虚空戒卫显示警告",
+	WarnVoidSoon	= "为虚空戒卫显示预先警告",
+	WarnFiend		= "为第2阶段的黑暗魔显示警告",
+	TimerHuman		= "为暗誓精灵显示计时条",
+	TimerVoid		= "为虚空戒卫显示计时条",
+	TimerPhase		= "为第2阶段转换显示计时条"
 }
 
 L:SetMiscLocalization{
@@ -161,37 +164,36 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	WarnDarkOrb		= "Dark Orbs Spawned",--Translate
-	WarnBlueOrb		= "Dragon Orb activated",--Translate
-	SpecWarnDarkOrb	= "Dark Orbs Spawned!",--Translate
-	SpecWarnBlueOrb	= "Dragon Orbs Activated!"--Translate
+	WarnDarkOrb		= "黑暗之球出现",
+	WarnBlueOrb		= "蓝龙军团宝珠启动",
+	SpecWarnDarkOrb	= "黑暗之球出现!",
+	SpecWarnBlueOrb	= "蓝龙军团宝珠启动!"
 }
 
 L:SetTimerLocalization{
-	TimerBlueOrb	= "Dragon Orbs activate"--Translate
+	TimerBlueOrb	= "蓝龙军团宝珠启动"
 }
 
 L:SetOptionLocalization{
-	WarnDarkOrb		= "Show warning for Dark Orbs",--Translate
-	WarnBlueOrb		= "Show warning for Dragon Orbs",--Translate
-	SpecWarnDarkOrb	= "Show special warning for Dark Orbs",--Translate
-	SpecWarnBlueOrb	= "Show special warning for Dragon Orbs",--Translate
-	TimerBlueOrb	= "Show timer form Dragon Orbs activate",--Translate
-	RangeFrame		= "Show range frame (10 yards)",--Translate
+	WarnDarkOrb		= "为黑暗之球显示警告",
+	WarnBlueOrb		= "为蓝龙军团宝珠显示警告",
+	SpecWarnDarkOrb	= "为黑暗之球显示特别警告",
+	SpecWarnBlueOrb	= "为蓝龙军团宝珠显示特别警告",
+	TimerBlueOrb	= "为蓝龙军团宝珠启动显示计时条",
+	RangeFrame		= "显示距离框体 (10码)",
 	BloomIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(45641),
-	YellOnBloom		= "Yell on $spell:45641",--Translate
-	BloomWhisper	= "Send whisper to $spell:45641 target (requires Raid Leader)"--Translate
+	YellOnBloom		= "中了$spell:45641时大喊",
+	BloomWhisper	= "向$spell:45641的目标发送密语（需要团长权限）"
 }
 
 L:SetMiscLocalization{
-	YellPull		= "这个消耗品已经没用了，不管她了！现在我已经做到了连萨格拉斯都没有做到的事情！我要彻底毁灭这个世界，真正成",
+	YellPull		= "这个消耗品已经没用了，不管她了！现在我已经做到了连萨格拉斯都没有做到的事情！我要彻底毁灭这个世界，真正成为燃烧军团的主宰！末日已经到来！让这个世界开始毁灭吧！",
 	YellBloom		= "我中了火焰之花！",
 	BloomWhisper	= "火焰之花！",
-	OrbYell1		= "I will channel my powers into the orbs! Be ready!",--Translate
-	OrbYell2		= "I have empowered another orb! Use it quickly!",--Translate
-	OrbYell3		= "Another orb is ready! Make haste!",--Translate
-	OrbYell4		= "I have channeled all I can! The power is in your hands!"--Translate
-
+	OrbYell1		= "我会将我的力量导入宝珠中！准备好！",
+	OrbYell2		= "我又将能量灌入了另一颗宝珠！快去使用它！",
+	OrbYell3		= "又有一颗宝珠准备好了！快点行动！",
+	OrbYell4		= "我已经引导出所有的力量了！力量现在掌握在你们的手里！"
 }
 
 -----------------
@@ -204,7 +206,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	HealthInfo	= "Health Info"
+	HealthInfo	= "生命值信息"
 }
 
 ----------------
@@ -217,25 +219,25 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	WarnPhase		= "%s Phase",--Translate
+	WarnPhase		= "%s阶段"
 }
 
 L:SetTimerLocalization{
-	TimerPhase		= "Next %s phase"--Translate
+	TimerPhase		= "下一次%s阶段"
 }
 
 L:SetOptionLocalization{
-	WarnPhase		= "Show warning for next phase",
-	TimerPhase		= "Show time for next phase",
-	KiteIcon		= "Set icon on Kite target"
+	WarnPhase		= "为下一个阶段显示警告",
+	TimerPhase		= "为下一个阶段显示计时条",
+	KiteIcon		= "为风筝目标设置标记"
 }
 
 L:SetMiscLocalization{
-	PhaseTank		= "愤怒地击打着地面！",--Check if Backwards
-	PhaseKite		= "地面崩裂了！",--Check if Backwards
+	PhaseTank		= "愤怒地击打着地面！",
+	PhaseKite		= "地面崩裂了！",
 	ChangeTarget	= "锁定了一个新目标！",
-	Kite			= "Kite",--Translate
-	Tank			= "Tank"--Translate
+	Kite			= "风筝",
+	Tank			= "坦克"
 }
 
 -------------------------
@@ -274,14 +276,11 @@ L:SetGeneralLocalization{
 }
 
 L:SetTimerLocalization{
-	TimerVengefulSpirit		= "Ghost : %s"--Translate
+	TimerVengefulSpirit		= "鬼魂: %s"
 }
 
 L:SetOptionLocalization{
-	TimerVengefulSpirit		= "Show timer for Ghost durations"--Translate
-}
-
-L:SetMiscLocalization{
+	TimerVengefulSpirit		= "为鬼魂持续时间显示计时条"
 }
 
 ----------------------------
@@ -311,16 +310,17 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnMana		= "Show warning from zero mana in Phase 2",--Translate
-	TimerEnrage		= "Show timer for Enrage"--Translate
+	WarnMana		= "在第2阶段法力耗尽时显示警告",
+	TimerMana		= "为第2阶段法力耗尽显示计时条",
+	TimerEnrage		= "为狂暴显示计时条"
 }
 
 L:SetMiscLocalization{
-	Suffering		= "Essence of Suffering",--Translate
-	Desire			= "Essence of Desire",--Translate
-	Anger			= "Essence of Anger",--Translate
-	Phase1End		= "I don't want to go back!",
-	Phase2End		= "I won't be far!"
+	Suffering		= "受难精华",
+	Desire			= "欲望精华",
+	Anger			= "愤怒精华",
+	Phase1End		= "我不想回去！",
+	Phase2End		= "我就在附近！"
 }
 
 -----------------------
@@ -337,7 +337,11 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	timerAura	= "Show timer for Prismatic Aura"
+	timerAura	= "为棱石光环显示计时条",
+	FAHelper	= "设置致命吸引的模组行为。如果团长也使用DBM，则优先采用团长的设置",
+	North		= "星星在左/西，圆圈在右/东，菱形在上/北",
+	South		= "星星在左/西，圆圈在右/东，菱形在下/南",
+	None		= "不显示箭头，信息框将显示数字而不是方向"
 }
 
 ----------------------
@@ -350,11 +354,11 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	Immune			= "Malande - %s immune for 15 sec"
+	Immune			= "玛兰德 - %s免疫15秒"
 }
 
 L:SetOptionLocalization{
-	Immune			= "Show warning when Manalde becomes spell or melee immune"
+	Immune			= "当玛兰德法术或物理免疫时显示警告"
 }
 
 L:SetMiscLocalization{
@@ -386,10 +390,10 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnHuman		= "Show warning for 普通形态",
-	WarnDemon		= "Show warning for 恶魔形态",
-	TimerNextHuman	= "Show time for 下一个普通形态",
-	TimerNextDemon	= "Show time for 下一个恶魔形态",
+	WarnHuman		= "为普通形态显示警告",
+	WarnDemon		= "为恶魔形态显示警告",
+	TimerNextHuman	= "为下一个普通形态显示计时条",
+	TimerNextDemon	= "为下一个恶魔形态显示计时条",
 	RangeFrame		= "为阶段3和阶段4显示10码距离提示"
 }
 
@@ -458,22 +462,23 @@ L:SetWarningLocalization{
 	WarnWaveSoon= "下一波敌人即将到来"
 }
 L:SetTimerLocalization{
-	TimerWave	= "Next wave"--Translate
+	TimerWave	= "下一波"
 }
 L:SetOptionLocalization{
-	WarnWave		= "Warn when a new wave is incoming",--Translate
-	WarnWaveSoon	= "Warn when a new wave is incoming soon",--Translate
-	DetailedWave	= "Detailed warning when a new wave is incoming (which mobs)",--Translate
-	TimerWave		= "Show a timer for next wave"--Translate
+	WarnWave		= "当新一波敌人到来时显示警告",
+	WarnWaveSoon	= "当新一波敌人即将到来时显示预先警告",
+	DetailedWave	= "当新一波敌人到来时显示详细警告（何种怪物）",
+	TimerWave		= "为下一波显示计时条"
 }
 L:SetMiscLocalization{
 	HyjalZoneName	= "海加尔峰",
 	Thrall			= "萨尔",
 	Jaina			= "吉安娜·普罗德摩尔",
-	RageWinterchill	= "雷基·冬寒",
-	Anetheron		= "安纳塞隆",
-	Kazrogal		= "卡兹洛加",
-	Azgalor			= "阿兹加洛",
+	GeneralBoss		= "首领到来",
+	RageWinterchill	= "雷基·冬寒到来",
+	Anetheron		= "安纳塞隆到来",
+	Kazrogal		= "卡兹洛加到来",
+	Azgalor			= "阿兹加洛到来",
 	WarnWave_0		= "第%s/8波",
 	WarnWave_1		= "第%s/8波 - %s%s",
 	WarnWave_2		= "第%s/8波 - %s%s 和 %s%s",
@@ -509,7 +514,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	NextPlatform	= "Show timer for when Al'ar changes platforms"
+	NextPlatform	= "为奥切换平台的时间显示计时条"
 }
 
 ------------------
@@ -535,7 +540,6 @@ L:SetWarningLocalization{
 	WarnSplitSoon	= "*** 5秒后分裂 ***",
 	WarnAgent		= "*** 密探出现 ***",
 	WarnPriest		= "*** 祭司与索兰莉安出现 ***"
-
 }
 
 L:SetTimerLocalization{
@@ -545,21 +549,21 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnSplit		= "Show warning for Split",
-	WarnSplitSoon	= "Show pre-warning for Split",
-	WarnAgent		= "Show warning for Agents spawn",
-	WarnPriest		= "Show warning for Priests and Solarian spawn",
-	TimerSplit		= "Show timer for Split",
-	TimerAgent		= "Show timer for Agents spawn",
-	TimerPriest		= "Show timer for Priests and Solarian spawn",
+	WarnSplit		= "为分裂显示警告",
+	WarnSplitSoon	= "为分裂显示预先警告",
+	WarnAgent		= "为密探出现显示警告",
+	WarnPriest		= "为祭司和索兰莉安出现显示警告",
+	TimerSplit		= "为分裂显示计时条",
+	TimerAgent		= "为密探出现显示计时条",
+	TimerPriest		= "为祭司和索兰莉安出现显示计时条",
 	WrathWhisper	= "向受到星术师之怒效果的目标发送密语"
 }
 
 L:SetMiscLocalization{
 	WrathWhisper	= "星术师之怒！",
-	YellSplit1		= "I will crush your delusions of grandeur!",--Translate
-	YellSplit2		= "You are hopelessly outmatched!",--Translate
-	YellPhase2		= "I become"--Translate
+	YellSplit1		= "我会粉碎你那伟大的梦想！",
+	YellSplit2		= "我的实力远胜于你！",
+	YellPhase2		= "我已经"
 }
 
 ---------------------------
@@ -573,31 +577,31 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	WarnGaze		= "*** 萨拉德雷注视着>%s< ***",
-	WarnMobDead		= "%s down",--Translate
+	WarnMobDead		= "%s 倒下",
 	WarnEgg			= "*** 凤凰倒下 - 卵出现 ***",
 	SpecWarnGaze	= "快跑！",
 	SpecWarnEgg		= "*** 凤凰倒下 - 卵出现 ***"
 }
 
 L:SetTimerLocalization{
-	TimerPhase		= "Next Phase",--Translate
+	TimerPhase		= "下一个阶段",
 	TimerPhase1mob	= "%s",
 	TimerNextGaze	= "凝视冷却",
 	TimerRebirth	= "复生"
 }
 
 L:SetOptionLocalization{
-	WarnGaze		= "Show warning for Thaladred's Gaze target",--Translate
-	WarnMobDead		= "Show warning for Phase 2 mob down",--Translate
-	WarnEgg			= "Show warning when Phoenix Egg spawn",--Translate
-	SpecWarnGaze	= "Show special warning when Gaze on you",--Translate
-	SpecWarnEgg		= "Show special warning when Phoenix Egg spawn",--Translate
-	TimerPhase		= "Show time for next phase",--Translate
-	TimerPhase1mob	= "Show time for Phase 1 mob active",--Translate
-	TimerNextGaze	= "Show timer for Thaladred's Gaze target changes",--Translate
-	TimerRebirth	= "Show timer for Phoenix Egg rebirth remaining",--Translate
+	WarnGaze		= "为萨拉德雷的凝视目标显示警告",
+	WarnMobDead		= "为第2阶段小怪倒下显示警告",
+	WarnEgg			= "为凤凰卵出现显示警告",
+	SpecWarnGaze	= "当凝视你时显示特别警告",
+	SpecWarnEgg		= "当凤凰卵出现时显示特别警告",
+	TimerPhase		= "为下一个阶段显示计时条",
+	TimerPhase1mob	= "为第1阶段小怪活动显示计时条",
+	TimerNextGaze	= "为萨拉德雷的凝视目标改变显示计时条",
+	TimerRebirth	= "为凤凰卵复生剩余时间显示计时条",
 	GazeWhisper		= "对萨拉德雷的目标发送密语",
-	GazeIcon		= "对萨拉德雷的目标添加标注"
+	GazeIcon		= "对萨拉德雷的目标添加标记"
 }
 
 L:SetMiscLocalization{
@@ -635,19 +639,19 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	WarnMark 		= "%s : %s",
-	WarnPhase		= "%s Phase",--Translate
+	WarnPhase		= "%s阶段",
 	SpecWarnMark	= "%s : %s"
 }
 
 L:SetTimerLocalization{
-	TimerMark	= "Next %s : %s"--Translate
+	TimerMark	= "下一次 %s : %s"
 }
 
 L:SetOptionLocalization{
 	WarnMark		= "警报印记",
 	WarnPhase		= "警报阶段变化",
-	SpecWarnMark	= "Show warning when Marks debuff damage over 100%",--Translate
-	TimerMark		= "Show timer for next Marks"--Translate
+	SpecWarnMark	= "当印记易伤超过100%时显示警告",
+	TimerMark		= "为下一次印记显示计时条"
 }
 
 L:SetMiscLocalization{
@@ -666,9 +670,9 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	WarnSubmerge		= "下潜",
-	WarnSubmergeSoon	= "Submerge in 10 sec",--Translate
+	WarnSubmergeSoon	= "10秒后下潜",
 	WarnEmerge			= "重新出现",
-	WarnEmergeSoon		= "Emerge in 10 sec"--Translate
+	WarnEmergeSoon		= "10秒后重新出现"
 }
 
 L:SetTimerLocalization{
@@ -677,12 +681,12 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnSubmerge		= "Show warning when submerge",--Translate
-	WarnSubmergeSoon	= "Show pre-warning for submerge",--Translate
-	WarnEmerge			= "Show warning when emerge",--Translate
-	WarnEmergeSoon		= "Show pre-warning for emerge",--Translate
-	TimerSubmerge		= "Show time for submerge",--Translate
-	TimerEmerge			= "Show time for emerge"--Translate
+	WarnSubmerge		= "为下潜显示警告",
+	WarnSubmergeSoon	= "为下潜显示预先警告",
+	WarnEmerge			= "为重新出现显示警告",
+	WarnEmergeSoon		= "为重新出现显示预先警告",
+	TimerSubmerge		= "为下潜显示计时条",
+	TimerEmerge			= "为重新出现显示计时条"
 }
 
 L:SetMiscLocalization{
@@ -699,23 +703,23 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	WarnPhase		= "%s Phase",--Translate
-	WarnPhaseSoon	= "%s Phase in 5 sec"--Translate
+	WarnPhase		= "%s阶段",
+	WarnPhaseSoon	= "5秒后 %s阶段"
 }
 
 L:SetTimerLocalization{
-	TimerPhase	= "Next %s Phase"--Translate
+	TimerPhase	= "下一次%s阶段"
 }
 
 L:SetOptionLocalization{
-	WarnPhase		= "Show warning for next phase",--Translate
-	WarnPhaseSoon	= "Show pre-warning for next phase",--Translate
-	TimerPhase		= "Show time for next phase"--Translate
+	WarnPhase		= "为下一个阶段显示警告",
+	WarnPhaseSoon	= "为下一个阶段显示预先警告",
+	TimerPhase		= "为下一个阶段显示计时条"
 }
 
 L:SetMiscLocalization{
-	Human		= "Human",--Translate
-	Demon		= "Demon",--Translate
+	Human		= "人形态",
+	Demon		= "恶魔形态",
 	YellDemon	= "滚开吧，脆弱的精灵。现在我说了算！",
 	YellPhase1  = "我的放逐终于结束了！",
 	YellPhase2	= "不……不！你在干什么？我才是主宰！你听到没有？我……啊啊啊啊！控制……不住了。"
@@ -740,9 +744,9 @@ L:SetOptionLocalization{
 }
 
 L:SetMiscLocalization{
-	Caribdis	= "Fathom-Guard Caribdis",--Translate
-	Tidalvess	= "Fathom-Guard Tidalvess",--Translate
-	Sharkkis	= "Fathom-Guard Sharkkis"--Translate
+	Caribdis	= "深水守卫卡利迪斯",
+	Tidalvess	= "深水守卫提达维斯",
+	Sharkkis	= "深水守卫沙基斯"
 }
 
 --------------------------
@@ -765,12 +769,9 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnMurlocs		= "警报鱼人群",
-	SpecWarnMurlocs	= "Show special warning when Murlocs spawning",--Translate
-	TimerMurlocs	= "Show timer for Murlocs spawning",--Translate
+	SpecWarnMurlocs	= "当鱼人群出现时显示特别警告",
+	TimerMurlocs	= "为鱼人群出现显示计时条",
 	GraveIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(38049)
-}
-
-L:SetMiscLocalization{
 }
 
 -----------------
@@ -792,27 +793,30 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	TimerElemental		= "被污染的元素 (%d)",--Verify
-	TimerStrider		= "盘牙巡逻者 (%d)",--Verify
-	TimerNaga			= "盘牙精英 (%d)"--Verify
+	TimerElementalActive	= "元素激活时间",
+	TimerElemental		= "被污染的元素 (%d)",
+	TimerStrider		= "盘牙巡逻者 (%d)",
+	TimerNaga			= "盘牙精英 (%d)"
 }
 
 L:SetOptionLocalization{
-	WarnElemental		= "Show pre-warning for next Tainted Elemental",--Translate
-	WarnStrider			= "Show pre-warning for next Strider",--Translate
-	WarnNaga			= "Show pre-warning for next Naga",--Translate
-	WarnShield			= "Show warning for Phase 2 shield down",--Translate
+	WarnElemental		= "为下一个被污染的元素显示预先警告",
+	WarnStrider			= "为下一个盘牙巡逻者显示预先警告",
+	WarnNaga			= "为下一个盘牙精英显示预先警告",
+	WarnShield			= "为第2阶段护盾消失显示警告",
 	WarnLoot			= "警报是谁拾取了污染之核",
-	TimerElemental		= "Show time for next Tainted Elemental",--Translate
-	TimerStrider		= "Show time for next Strider",--Translate
-	TimerNaga			= "Show time for next Strider",--Translate
-	SpecWarnElemental	= "Show special warning when Tainted Elemental coming",--Translate
+	TimerElementalActive	= "为被污染的元素活动时间显示计时条",
+	TimerElemental		= "为下一个被污染的元素显示计时条",
+	TimerStrider		= "为下一个盘牙巡逻者显示计时条",
+	TimerNaga			= "为下一个盘牙精英显示计时条",
+	SpecWarnElemental	= "当被污染的元素出现时显示特别警告",
 	ChargeIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(38280),
 	AutoChangeLootToFFA	= "第3阶段自动转换拾取方式为自由拾取"
 }
 
 L:SetMiscLocalization{
 	DBM_VASHJ_YELL_PHASE2	= "机会来了！一个活口都不要留下！",
+	DBM_VASHJ_YELL_PHASE3	= "你们最好找掩护。",
 	LootMsg				= "(.+)获得了物品：.*Hitem:(%d+)"
 }
 
@@ -822,7 +826,6 @@ L = DBM:GetModLocalization("Maulgar")
 L:SetGeneralLocalization{
 	name = "莫加尔大王"
 }
-
 
 --Gruul the Dragonkiller
 L = DBM:GetModLocalization("Gruul")
@@ -836,9 +839,11 @@ L:SetWarningLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnGrowth	= "Show warning for $spell:36300"
+	WarnGrowth		= "为$spell:36300显示警告",
+	RangeDistance	= "为|cff71d5ff|Hspell:33654|h碎裂|h|r设置距离框距离",
+	Smaller			= "较小距离 (11)",
+	Safe			= "安全距离 (18)"
 }
-
 
 -- Magtheridon
 L = DBM:GetModLocalization("Magtheridon")
@@ -848,17 +853,17 @@ L:SetGeneralLocalization{
 }
 
 L:SetTimerLocalization{
-	timerP2	= "Phase 2"
+	timerP2	= "第2阶段"
 }
 
 L:SetOptionLocalization{
-	timerP2	= "Show timer for start of phase 2"
+	timerP2	= "为第2阶段开始显示计时条"
 }
 
 L:SetMiscLocalization{
 	DBM_MAG_EMOTE_PULL		= "%s的禁锢开始变弱！",
 	DBM_MAG_YELL_PHASE2		= "我……自由了！",
-	DBM_MAG_YELL_PHASE3		= "I will not be taken so easily! Let the walls of this prison tremble... and fall!"
+	DBM_MAG_YELL_PHASE3		= "我不会这么轻易就被击败！让这座监狱的墙壁震颤……然后崩塌！"
 }
 
 --Attumen
@@ -872,7 +877,6 @@ L:SetMiscLocalization{
 	DBM_ATH_YELL_1		= "来吧，午夜，让我们解决这群乌合之众！"
 }
 
-
 --Moroes
 L = DBM:GetModLocalization("Moroes")
 
@@ -885,9 +889,8 @@ L:SetWarningLocalization{
 }
 
 L:SetOptionLocalization{
-	DBM_MOROES_VANISH_FADED	= "Show vanish fade warning"
+	DBM_MOROES_VANISH_FADED	= "为消失效果消失显示警告"
 }
-
 
 -- Maiden of Virtue
 L = DBM:GetModLocalization("Maiden")
@@ -895,7 +898,6 @@ L = DBM:GetModLocalization("Maiden")
 L:SetGeneralLocalization{
 	name = "贞节圣女"
 }
-
 
 -- Romulo and Julianne
 L = DBM:GetModLocalization("RomuloAndJulianne")
@@ -905,11 +907,12 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
+	Event				= "今晚……我们要探索一个禁忌之爱的故事。",
+	RJ_Pull				= "你是什么样的恶魔，让我这样的痛苦？",
 	DBM_RJ_PHASE2_YELL	= "来吧，可爱的黑颜的夜，把我的罗密欧给我！",
-	Romulo				= "Romulo",
-	Julianne			= "Julianne"
+	Romulo				= "罗密欧",
+	Julianne			= "朱丽叶"
 }
-
 
 -- Big Bad Wolf
 L = DBM:GetModLocalization("BigBadWolf")
@@ -922,7 +925,6 @@ L:SetMiscLocalization{
 	DBM_BBW_YELL_1			= "可以一口把你吃掉呀！"
 }
 
-
 -- Curator
 L = DBM:GetModLocalization("Curator")
 
@@ -930,6 +932,13 @@ L:SetGeneralLocalization{
 	name = "馆长"
 }
 
+L:SetWarningLocalization{
+	warnAdd		= "小怪重生"
+}
+
+L:SetOptionLocalization{
+	warnAdd		= "为小怪重生显示警告"
+}
 
 -- Terestian Illhoof
 L = DBM:GetModLocalization("TerestianIllhoof")
@@ -939,10 +948,9 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	Kilrek					= "Kil'rek",
-	DChains					= "Demon Chains"
+	Kilrek					= "基尔瑞克",
+	DChains					= "恶魔锁链"
 }
-
 
 -- Shade of Aran
 L = DBM:GetModLocalization("Aran")
@@ -952,11 +960,16 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	DBM_ARAN_DO_NOT_MOVE	= "不要移动！"
+	DBM_ARAN_DO_NOT_MOVE	= "烈焰火圈，不要动！"
+}
+
+L:SetTimerLocalization{
+	timerSpecial			= "特殊技能冷却"
 }
 
 L:SetOptionLocalization{
-	DBM_ARAN_DO_NOT_MOVE	= "Show special warning for $spell:30004"
+	timerSpecial			= "为特殊技能冷却显示计时条",
+	DBM_ARAN_DO_NOT_MOVE	= "为$spell:30004显示特别警告"
 }
 
 --Netherspite
@@ -979,12 +992,12 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	DBM_NS_WARN_PORTAL_SOON	= "Show pre-warning for Portal phase",
-	DBM_NS_WARN_BANISH_SOON	= "Show pre-warning for Banish phase",
-	warningPortal			= "Show warning for Portal phase",
-	warningBanish			= "Show warning for Banish phase",
-	timerPortalPhase		= "Show timer for Portal Phase duration",
-	timerBanishPhase		= "Show timer for Banish Phase duration"
+	DBM_NS_WARN_PORTAL_SOON	= "为虚空门阶段显示预先警告",
+	DBM_NS_WARN_BANISH_SOON	= "为放逐阶段显示预先警告",
+	warningPortal			= "为虚空门阶段显示警告",
+	warningBanish			= "为放逐阶段显示警告",
+	timerPortalPhase		= "为虚空门阶段持续时间显示计时条",
+	timerBanishPhase		= "为放逐阶段持续时间显示计时条"
 }
 
 L:SetMiscLocalization{
@@ -992,6 +1005,24 @@ L:SetMiscLocalization{
 	DBM_NS_EMOTE_PHASE_1	= "%s在撤退中大声呼喊着，打开了回到虚空的传送门。"
 }
 
+--Chess
+L = DBM:GetModLocalization("Chess")
+
+L:SetGeneralLocalization{
+	name = "国际象棋事件"
+}
+
+L:SetTimerLocalization{
+	timerCheat	= "作弊冷却"
+}
+
+L:SetOptionLocalization{
+	timerCheat	= "为作弊冷却显示计时条"
+}
+
+L:SetMiscLocalization{
+	EchoCheats	= "麦迪文的回音作弊！"
+}
 
 --Prince Malchezaar
 L = DBM:GetModLocalization("Prince")
@@ -1006,7 +1037,6 @@ L:SetMiscLocalization{
 	DBM_PRINCE_YELL_INF1	= "所有的世界都向我敞开大门！",
 	DBM_PRINCE_YELL_INF2	= "你面对的不仅仅是玛克扎尔，还有我所号令的军团！"
 }
-
 
 -- Nightbane
 L = DBM:GetModLocalization("NightbaneRaid")
@@ -1027,10 +1057,10 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	DBM_NB_AIR_WARN			= "Show warning for Air Phase",
-	PrewarnGroundPhase		= "Show pre-warnings for Ground Phase",
-	timerNightbane			= "Show timer for Nightbane summon",
-	timerAirPhase			= "Show timer for Air Phase duration"
+	DBM_NB_AIR_WARN			= "为空中阶段显示警告",
+	PrewarnGroundPhase		= "为地面阶段显示预先警告",
+	timerNightbane			= "为夜之魇召唤显示计时条",
+	timerAirPhase			= "为空中阶段持续时间显示计时条"
 }
 
 L:SetMiscLocalization{
@@ -1040,7 +1070,6 @@ L:SetMiscLocalization{
 	DBM_NB_YELL_GROUND2	= "没用的虫子！让你们见识一下我的力量吧！"
 }
 
-
 -- Wizard of Oz
 L = DBM:GetModLocalization("Oz")
 
@@ -1048,24 +1077,33 @@ L:SetGeneralLocalization{
 	name = "绿野仙踪"
 }
 
-L:SetOptionLocalization{
-	AnnounceBosses			= "Show warnings for boss spawns",
-	ShowBossTimers			= "Show timers for boss spawns"
-}
-
-L:SetMiscLocalization{
+L:SetWarningLocalization{
 	DBM_OZ_WARN_TITO		= "托托",
 	DBM_OZ_WARN_ROAR		= "胆小的狮子",
 	DBM_OZ_WARN_STRAWMAN	= "稻草人",
 	DBM_OZ_WARN_TINHEAD		= "铁皮人",
-	DBM_OZ_WARN_CRONE		= "巫婆",
+	DBM_OZ_WARN_CRONE		= "巫婆"
+}
+
+L:SetTimerLocalization{
+	DBM_OZ_WARN_TITO		= "托托",
+	DBM_OZ_WARN_ROAR		= "胆小的狮子",
+	DBM_OZ_WARN_STRAWMAN	= "稻草人",
+	DBM_OZ_WARN_TINHEAD		= "铁皮人"
+}
+
+L:SetOptionLocalization{
+	AnnounceBosses			= "为首领出现显示警告",
+	ShowBossTimers			= "为首领出现显示计时条"
+}
+
+L:SetMiscLocalization{
 	DBM_OZ_YELL_DOROTHEE	= "啊，托托，我们必须找到回家的路！那位老巫师是我们唯一的希望了！稻草人、狮子，还有铁皮人，你们能不能——呀，有人来了！",
 	DBM_OZ_YELL_ROAR		= "我不怕你们！你们想打架？那就来呀！来呀！我不用前爪都可以打败你们！",
 	DBM_OZ_YELL_STRAWMAN	= "我该把你怎么办？我完全不知道。",
 	DBM_OZ_YELL_TINHEAD		= "我真的需要一颗心。啊，用你的行吗？",
 	DBM_OZ_YELL_CRONE		= "我为你们感到可悲，小家伙们！"
 }
-
 
 -- Named Beasts
 L = DBM:GetModLocalization("Shadikith")
