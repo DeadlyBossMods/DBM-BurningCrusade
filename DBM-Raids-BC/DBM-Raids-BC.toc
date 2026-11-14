@@ -1,6 +1,6 @@
 ## AllowLoadGameType: tbc, wrath, cata, mists, standard
 ## Interface: 20506, 30405, 38002, 40402, 50504, 120105, 120107
-## Version: @project-version@
+## Version: r22
 ## Category: DBM
 
 ## Title:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cffff6010Raids (BC)|r
@@ -19,6 +19,7 @@
 ## X-DBM-Mod-SubCategoriesID: 580, 564, 534, 550, 548, 544, 565, 532, 568 [AllowLoadGameType tbc, wrath, cata, mists]
 ## X-DBM-Mod-SubCategoriesID: 580, 564, 534, 550, 548, 544, 565, 532 [AllowLoadGameType standard]
 ## X-DBM-Mod-Name: Raids (BC)
+## X-DBM-Mod-Name-zhCN: 团队副本 (燃烧的远征)
 ## X-DBM-Mod-Name-koKR: 공격대 (불성)
 ## X-DBM-Mod-Name-ruRU: Рейды (BC)
 ## X-DBM-Mod-Sort: 1001
