@@ -30,11 +30,11 @@
 ## X-Wago-ID: E6gLA4K1
 
 localization.en.lua
-localization.de.lua
-localization.es.lua
-localization.tw.lua
-localization.cn.lua
-localization.ru.lua
-localization.kr.lua
+localization.de.lua [AllowLoadTextLocale deDE]
+localization.es.lua [AllowLoadTextLocale esES, esMX]
+localization.tw.lua [AllowLoadTextLocale zhTW]
+localization.cn.lua [AllowLoadTextLocale zhCN]
+localization.ru.lua [AllowLoadTextLocale ruRU]
+localization.kr.lua [AllowLoadTextLocale koKR]
 Kazzak.lua
 Doomwalker.lua

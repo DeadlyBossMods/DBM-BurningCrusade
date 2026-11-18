@@ -30,12 +30,12 @@
 ## X-Wago-ID: E6gLA4K1
 
 localization.en.lua
-localization.tw.lua
-localization.cn.lua
-localization.de.lua
-localization.es.lua
-localization.kr.lua
-localization.ru.lua
+localization.tw.lua [AllowLoadTextLocale zhTW]
+localization.cn.lua [AllowLoadTextLocale zhCN]
+localization.de.lua [AllowLoadTextLocale deDE]
+localization.es.lua [AllowLoadTextLocale esES, esMX]
+localization.kr.lua [AllowLoadTextLocale koKR]
+localization.ru.lua [AllowLoadTextLocale ruRU]
 
 Sunwell\Kalecgos.lua
 Sunwell\KalecgosFrame.lua
